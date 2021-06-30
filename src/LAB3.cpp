@@ -10,17 +10,14 @@
  * Author:
  * Date:
  */
-void setup();
-void loop();
-#line 7 "c:/Users/Vishal/Documents/CTDProjects/LAB3/src/LAB3.ino"
 SYSTEM_MODE(MANUAL);
 SYSTEM_THREAD(ENABLED);
 // setup() runs once, when the device is first turned on.
 void setup() {
   // Put initialization like pinMode and begin functions here.
-  pinMode(D5, OUTPUT);
-  pinMode(D6, OUTPUT);  
-  pinMode(D7, OUTPUT); 
+  pinMode(D5, OUTPUT); //Sets D5 pin as an output
+  pinMode(D6, OUTPUT); //Sets D6 pin as an output
+  pinMode(D7, OUTPUT); //Sets D7 pin as an output
 }
 
 // loop() runs over and over again, as quickly as it can execute.
@@ -29,8 +26,8 @@ void loop() {
   
   //red
   analogWrite(D7, 255); // r
-  analogWrite(D6, 0); // g
-  analogWrite(D5, 0); // b
+  analogWrite(D6, 0);   // g
+  analogWrite(D5, 0);   // b
   //waits 1 second
   delay(1000);
 
